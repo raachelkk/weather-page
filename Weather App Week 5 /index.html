@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 Challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/79f0872487.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-city">
+        <div class="row mb-4">
+          <div class="col-6">
+            <input
+              type="text"
+              placeholder="City Search"
+              class="form-control form-control-sm"
+              id="city-input"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              class="btn btn-light btn-sm"
+              id="search-button"
+              value="Search"
+            />
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              class="btn btn-primary btn-sm"
+              value="Current City"
+              id="current-location-button"
+            />
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-6 left-content">
+          <div class="greeting">Good morning!</div>
+          <h1>Victoria</h1>
+          <div class="date" id="date">time, Saturday, October 29th, 2022</div>
+          <i class="fa-solid fa-sun sun-icon"></i>
+          <span class="current-temp" id="current-temp">21</span>
+          <span class="units"> ºC </span>
+          <br />
+          <div class="conditions" id="weather-description">Sunny</div>
+          <div class="conditions" id="humidity">Percipitation 20%</div>
+          <div class="conditions" id="wind">Wind 7 km/h</div>
+        </div>
+
+        <div class="col-6">
+          <div class="row mb-4">
+            <div class="col-4 weekday">Sunday</div>
+            <div class="col-5">19º | 9º</div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-sun small-weather-icon"></i>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-4 weekday">Monday</div>
+            <div class="col-5">16º | 5º</div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-sun-rain small-weather-icon"></i>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-4 weekday">Tuesday</div>
+            <div class="col-5">18º | 10º</div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud small-weather-icon"></i>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-4 weekday">Wednesday</div>
+            <div class="col-5">20º | 10º</div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-sun small-weather-icon"></i>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-4 weekday">Thursday</div>
+            <div class="col-5">19º | 8º</div>
+            <div class="col-3">
+              <i class="fa-solid fa-sun small-weather-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+h1 {
+  color: #1e75c8;
+  font-size: 50px;
+}
+
+.container {
+  border-radius: 5px;
+  border: 1px solid #1e76c871;
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
+  );
+  margin: 50px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.conditions {
+  color: black 25%;
+  font-size: 12px;
+}
+
+.current-temp {
+  color: #1e75c8;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.greeting,
+.time,
+.date {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.left-content {
+  border-right: 2px solid #1e75c8;
+}
+
+.sun-icon {
+  color: #fff;
+  font-size: 50px;
+  margin: 20px auto;
+}
+
+.small-weather-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.weekday {
+  color: #1e75c8;
+  font-weight: bold;
+}
