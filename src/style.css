@@ -7,7 +7,7 @@ h1 {
   font-size: 50px;
 }
 
-.container {
+.body {
   border-radius: 5px;
   border: 1px solid #1e76c871;
   background: linear-gradient(
@@ -22,6 +22,13 @@ h1 {
 
 .conditions {
   color: black 25%;
+  font-size: 12px;
+}
+
+.credit {
+  position: relative;
+  bottom: 45px;
+  left: 55px;
   font-size: 12px;
 }
 
